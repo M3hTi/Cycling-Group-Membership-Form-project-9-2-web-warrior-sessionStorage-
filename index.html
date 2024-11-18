@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hands-on Project 9-2</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        Hands-on Project 9-2
+    </div>
+    
+    <div class="container">
+        <h2>My Membership Information</h2>
+        
+        <form id="membershipForm" action="results.html" method="get">
+            <div class="form-group">
+                <label for="riderName">Rider Name</label>
+                <input type="text" id="riderName" name="riderName" >
+            </div>
+
+            <div class="form-group">
+                <label for="ageGroup">Age Group</label>
+                <select id="ageGroup" name="ageGroup" >
+                    <option value="">Pls select</option>
+                    <option value="under-20">Under 20</option>
+                    <option value="21-30">21 - 30</option>
+                    <option value="31-40">31 - 40</option>
+                    <option value="41-50">41 - 50</option>
+                    <option value="51-60">51 - 60</option>
+                    <option value="over-60">Over 60</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bike">Bike</label>
+                <select id="bike" name="bike" >
+                    <option value="">Pls select</option>
+                    <option value="road">Road</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="route">Route</label>
+                <select id="route" name="route" >
+                    <option value="">Pls select</option>
+                    <option value="road">Road</option>
+                    <option value="trail">Trail</option>
+                    <option value="mixed">Mixed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="accommodation">Accommodation</label>
+                <select id="accommodation" name="accommodation" >
+                    <option value="">Pls select</option>
+                    <option value="camping">Camping</option>
+                    <option value="motel">Motel</option>
+                    <option value="bed-breakfast">Bed &amp; Breakfast</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region</label>
+                <select id="region" name="region" >
+                    <option value="">Pls select</option>
+                    <option value="northeast">Northeast</option>
+                    <option value="southeast">Southeast</option>
+                    <option value="midwest">Midwest</option>
+                    <option value="southwest">Southwest</option>
+                    <option value="northwest">Northwest</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="milesPerDay">Miles per Day</label>
+                <select id="milesPerDay" name="milesPerDay">
+                    <option value="">Pls select</option>
+                    <option value="under-20">Under 20</option>
+                    <option value="21-40">21 - 40</option>
+                    <option value="41-60">41 - 60</option>
+                    <option value="over-60">Over 60</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="next-button">Next Page</button>
+            </div>
+        </form>
+        <div class="errorMsg"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
